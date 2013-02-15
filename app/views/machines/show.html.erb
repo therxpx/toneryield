@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mode:</b>
+  <%= @machine.model %>
+</p>
+
+<p>
+  <b>Toner:</b>
+  <%= @machine.toner_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_machine_path(@machine) %> |
+<%= link_to 'Back', machines_path %>

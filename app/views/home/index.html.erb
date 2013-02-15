@@ -1,0 +1,23 @@
+<h1>Home#index</h1>
+
+<p>Find me in app/views/home/index.html.erb</p>
+
+<% @toners.each do |toner| %>
+<div class="machinemodels">
+<ul>Available Machines
+<% toner.machines.each do |machine|  %>
+	<li><%= machine.model %></li>
+<%end %>
+</ul>
+</div>
+<div class="tonerinfo">
+<ul>
+	<li><%= toner.id %></li>
+    <li><%= toner.name %></li>
+    <li><%= toner.yield %></li>
+    <li><%= link_to 'Show', toner %></li>
+    <li><%= link_to 'Edit', edit_toner_path(toner) %></li>
+    <li><%= link_to 'Destroy', toner, confirm: 'Are you sure?', method: :delete %></li>
+</ul>
+<% end %>
+</div>

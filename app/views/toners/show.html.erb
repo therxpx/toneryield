@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @toner.name %>
+</p>
+
+<p>
+  <b>Yield:</b>
+  <%= @toner.yield %>
+</p>
+
+
+<%= link_to 'Edit', edit_toner_path(@toner) %> |
+<%= link_to 'Back', toners_path %>

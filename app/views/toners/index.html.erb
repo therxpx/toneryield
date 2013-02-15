@@ -1,0 +1,27 @@
+<h1>Listing toners</h1>
+
+<table>
+  <tr>
+	<th>id</th>
+    <th>Name</th>
+    <th>Yield</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @toners.each do |toner| %>
+  <tr>
+	<td><%= toner.id %></td>
+    <td><%= toner.name %></td>
+    <td><%= toner.yield %></td>
+    <td><%= link_to 'Show', toner %></td>
+    <td><%= link_to 'Edit', edit_toner_path(toner) %></td>
+    <td><%= link_to 'Destroy', toner, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Toner', new_toner_path %>

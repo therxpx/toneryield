@@ -1,5 +1,7 @@
 <h1>Home#index</h1>
-
+<nav>
+<%= link_to 'Toners', toners_path %> <%= link_to 'Machines', machines_path %>
+</nav>
 <p>Find me in app/views/home/index.html.erb</p>
 
 <% @toners.each do |toner| %>
@@ -21,3 +23,5 @@
 </ul>
 <% end %>
 </div>
+
+<%= link_to 'Toner', toners_path %>

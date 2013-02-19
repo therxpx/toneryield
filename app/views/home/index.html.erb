@@ -1,24 +1,21 @@
-<h1>Toner Yields</h1>
 <nav>
 <form>
-<input type="search" autofocus>
+<input type="search" id="searchTerm">
 </form>
 Edit :: <%= link_to 'Toners', toners_path %> <%= link_to 'Machines', machines_path %>
 </nav>
-
+<h1>Toner Yields</h1>
 <% @toners.each do |toner| %>
 
-<section class="tonerinfo">
+<div class="tonerinfo">
 <h2><%= toner.name %> :: <%= link_to toner.yield, edit_toner_path(toner) %></h2>
-</section>
 
-<section class="machinemodels">
 <ul>
 	<% toner.machines.each do |machine|  %>
 		<li><%= machine.model %></li>
 	<%end %>
 </ul>
-</section>
+</div>
 <% end %>
 
 <p>Find me in app/views/home/index.html.erb</p>

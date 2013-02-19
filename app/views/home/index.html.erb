@@ -1,27 +1,24 @@
-<h1>Home#index</h1>
+<h1>Toner Yields</h1>
 <nav>
-<%= link_to 'Toners', toners_path %> <%= link_to 'Machines', machines_path %>
+<form>
+<input type="search" autofocus>
+</form>
+Edit :: <%= link_to 'Toners', toners_path %> <%= link_to 'Machines', machines_path %>
 </nav>
-<p>Find me in app/views/home/index.html.erb</p>
 
 <% @toners.each do |toner| %>
-<div class="machinemodels">
-<ul>Available Machines
-<% toner.machines.each do |machine|  %>
-	<li><%= machine.model %></li>
-<%end %>
-</ul>
-</div>
-<div class="tonerinfo">
-<ul>
-	<li><%= toner.id %></li>
-    <li><%= toner.name %></li>
-    <li><%= toner.yield %></li>
-    <li><%= link_to 'Show', toner %></li>
-    <li><%= link_to 'Edit', edit_toner_path(toner) %></li>
-    <li><%= link_to 'Destroy', toner, confirm: 'Are you sure?', method: :delete %></li>
-</ul>
-<% end %>
-</div>
 
-<%= link_to 'Toner', toners_path %>
+<section class="tonerinfo">
+<h2><%= toner.name %> :: <%= link_to toner.yield, edit_toner_path(toner) %></h2>
+</section>
+
+<section class="machinemodels">
+<ul>
+	<% toner.machines.each do |machine|  %>
+		<li><%= machine.model %></li>
+	<%end %>
+</ul>
+</section>
+<% end %>
+
+<p>Find me in app/views/home/index.html.erb</p>

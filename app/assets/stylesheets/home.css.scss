@@ -1,3 +1,41 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  margin: 0px;
+}
+
+h1 {
+  padding-left: 10px;
+}
+
+form {
+  display: inline;
+}
+
+h2 {
+  font-size: 14px;
+  padding: 0px 0px 0px 10px;
+  margin: 0px;
+}
+
+ul {
+  margin-top: 0px;
+  font-size: 10px;
+  list-style-type: none;
+  margin: none;
+  padding: 0px 0px 0px 25px;
+}
+
+nav {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #1fa4ec;
+  padding: 5px 10px;
+}
+
+nav a:link, nav a:visited {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  }

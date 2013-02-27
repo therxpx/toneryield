@@ -5,17 +5,7 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  
-  <script type="text/javascript">
-	$(document).ready(function() {
-		$('#searchTerm').keyup(function() {
-			var searchTerm = $(this).val();
-			//if statement, if matches, show it, else hide?
-			//This :contains selector is terrible, need to match both cases...
-			$('h2:contains(' + searchTerm + ')').toggle();
-		});
-	});
-  </script>
+
 </head>
 <body>
 

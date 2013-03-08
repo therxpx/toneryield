@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :toner_id %><br />
-    <%= f.number_field :toner_id %>
+	<%= f.select :toner_id, Toner.all.collect {|t| [ t.name, t.id ] }, {:include_blank => 'Choose Toner'} %>
   </div>
   <div class="actions">
     <%= f.submit %>

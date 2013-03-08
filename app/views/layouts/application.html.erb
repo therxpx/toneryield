@@ -8,8 +8,15 @@
 
 </head>
 <body>
+<nav>
+<form>
+<input type="search" id="searchTerm">
+</form>
+<%= link_to 'Home', root_url %> <%= link_to 'Toners', toners_path %> <%= link_to 'Machines', machines_path %>
+</nav>
 
 <%= yield %>
+
 
 </body>
 </html>

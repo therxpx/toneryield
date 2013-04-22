@@ -8,7 +8,22 @@ Machine.create([
   { :model => "KM3050", :toner_id => 2, :created_at => "2013-03-08 05:38:05", :updated_at => "2013-03-08 05:38:05" },
   { :model => "KM5050", :toner_id => 2, :created_at => "2013-03-08 05:38:19", :updated_at => "2013-03-08 05:38:19" },
   { :model => "FS1028", :toner_id => 3, :created_at => "2013-03-08 05:40:01", :updated_at => "2013-03-08 05:40:09" },
-  { :model => "FS1128", :toner_id => 3, :created_at => "2013-03-08 05:40:23", :updated_at => "2013-03-08 05:40:23" }
+  { :model => "FS1128", :toner_id => 3, :created_at => "2013-03-08 05:40:23", :updated_at => "2013-03-08 05:40:23" },
+  { :model => "TA250CI", :toner_id => 4, :created_at => "2013-04-20 19:00:21", :updated_at => "2013-04-20 19:00:27" },
+  { :model => "TA250CI", :toner_id => 5, :created_at => "2013-04-20 19:00:39", :updated_at => "2013-04-20 19:00:39" },
+  { :model => "TA300CI", :toner_id => 4, :created_at => "2013-04-20 19:01:06", :updated_at => "2013-04-20 19:01:06" },
+  { :model => "TA300CI", :toner_id => 5, :created_at => "2013-04-20 19:01:26", :updated_at => "2013-04-20 19:08:09" },
+  { :model => "TA255", :toner_id => 6, :created_at => "2013-04-20 19:08:27", :updated_at => "2013-04-20 19:08:27" },
+  { :model => "TA305", :toner_id => 6, :created_at => "2013-04-20 19:08:40", :updated_at => "2013-04-20 19:08:40" },
+  { :model => "TA400CI", :toner_id => 7, :created_at => "2013-04-20 19:12:05", :updated_at => "2013-04-20 19:12:05" },
+  { :model => "TA500CI", :toner_id => 8, :created_at => "2013-04-20 19:12:22", :updated_at => "2013-04-20 19:12:22" },
+  { :model => "TA3500I", :toner_id => 9, :created_at => "2013-04-20 19:15:58", :updated_at => "2013-04-20 19:15:58" },
+  { :model => "TA4500I", :toner_id => 9, :created_at => "2013-04-20 19:16:12", :updated_at => "2013-04-20 19:16:12" },
+  { :model => "TA5500", :toner_id => 9, :created_at => "2013-04-20 19:18:23", :updated_at => "2013-04-20 19:18:23" },
+  { :model => "TA6500I", :toner_id => 10, :created_at => "2013-04-20 19:20:41", :updated_at => "2013-04-20 19:20:41" },
+  { :model => "TA8000I", :toner_id => 10, :created_at => "2013-04-20 19:20:57", :updated_at => "2013-04-20 19:20:57" },
+  { :model => "FS6525", :toner_id => 11, :created_at => "2013-04-20 19:22:17", :updated_at => "2013-04-20 19:22:17" },
+  { :model => "FS6530", :toner_id => 11, :created_at => "2013-04-20 19:22:35", :updated_at => "2013-04-20 19:22:35" }
 ], :without_protection => true )
 
 
@@ -16,7 +31,15 @@ Machine.create([
 Toner.create([
   { :name => "TK18", :yield => 6000, :created_at => "2013-03-08 05:12:57", :updated_at => "2013-03-08 05:12:57" },
   { :name => "TK717", :yield => 34000, :created_at => "2013-03-08 05:36:08", :updated_at => "2013-03-08 05:36:21" },
-  { :name => "TK132", :yield => 7200, :created_at => "2013-03-08 05:39:44", :updated_at => "2013-03-08 05:39:44" }
+  { :name => "TK132", :yield => 7200, :created_at => "2013-03-08 05:39:44", :updated_at => "2013-03-08 05:39:44" },
+  { :name => "TK867K", :yield => 20000, :created_at => "2013-04-20 18:59:23", :updated_at => "2013-04-20 18:59:23" },
+  { :name => "TK867CMY", :yield => 12000, :created_at => "2013-04-20 18:59:48", :updated_at => "2013-04-20 18:59:48" },
+  { :name => "TK477", :yield => 15000, :created_at => "2013-04-20 19:07:35", :updated_at => "2013-04-20 19:07:35" },
+  { :name => "TK857K", :yield => 25000, :created_at => "2013-04-20 19:11:21", :updated_at => "2013-04-20 19:11:21" },
+  { :name => "TK857CYM", :yield => 18000, :created_at => "2013-04-20 19:11:48", :updated_at => "2013-04-20 19:11:48" },
+  { :name => "TK6307", :yield => 35000, :created_at => "2013-04-20 19:15:41", :updated_at => "2013-04-20 19:15:41" },
+  { :name => "TK6707", :yield => 70000, :created_at => "2013-04-20 19:20:20", :updated_at => "2013-04-20 19:20:20" },
+  { :name => "TK477", :yield => 15000, :created_at => "2013-04-20 19:21:42", :updated_at => "2013-04-20 19:21:42" }
 ], :without_protection => true )
 
 
